@@ -9,7 +9,7 @@ class Player:
         self.playing_time = {
             "matches_played": "N/a",
             "starts": "N/a",
-            "minutes": 0
+            "minutes": 0 
         }
 
         # Performance

@@ -1,6 +1,6 @@
 
 # Tạo tiêu đề CSV từ tất cả các thuộc tính của Player
-header = [
+header = [ 
     "name", "nation", "team", "position", "age",
     # Playing Time
     "matches_played", "starts", "minutes",

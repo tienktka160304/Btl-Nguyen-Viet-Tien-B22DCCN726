@@ -30,10 +30,10 @@ if 1==1:
     for i in range(5,ATTR_NUMBER):
         top_3_rows = df.nlargest(3, df.columns[i])
         print("Top3 cao nhất thuộc tính",header[i])
-        print(top_3_rows.iloc[:, 0].values)
+        print(top_3_rows.iloc[:,0].values)
         print("Top 3 thấp nhất thuộc tính",header[i])
         bot_3_rows = df.nsmallest(3, df.columns[i])
-        print(bot_3_rows.iloc[:, 0].values)
+        print(bot_3_rows.iloc[:,0].values)
 
 
 
