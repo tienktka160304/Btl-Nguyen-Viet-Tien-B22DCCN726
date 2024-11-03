@@ -5,7 +5,7 @@ import time
 from bs4 import BeautifulSoup
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-# Truy cập vào trang web
+# Truy cập vào trang web 
 from ob import Player
 from ob import Player_Manager
 from ob import Squad
@@ -76,7 +76,7 @@ def getDataFromWeb(url,idPlayerTable,idSquadTable,lengthPlayerData,DataName):
                     s=validdata(s)
                 arr.append(s)
             resultSquadData.append(arr)
-    except :
+    except:
         print("Something went wrong")
     finally:
         print("Finish Page "+DataName)
@@ -247,7 +247,6 @@ for i in list_squad_result:
     s=squad_manager.findSquadByName(i[0])
     if s!=None:
         s.setGoalShotCreation(i[3:5],i[5:11],i[11:13],i[13:])
-
 
 
 
